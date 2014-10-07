@@ -8,7 +8,8 @@
 
 ##用到的项目
 
- - [html5-boilerplate](https://github.com/h5bp/html5-boilerplate) 
+ - [html5-boilerplate](https://github.com/h5bp/html5-boilerplate)
+ - [Taobao IP地址库](http://ip.taobao.com/) - geo查询
  - [Bootstrap](https://github.com/twbs/bootstrap) - 适配不同分辨率终端
  - [Quicksand](https://github.com/razorjack/quicksand) - 条件过滤
  - [jQuery.easing](https://github.com/gdsmith/jquery.easing)
