@@ -33,7 +33,7 @@
 起送价滑条跟页面的其他元素不太和谐，所以这里我用一个叫quicksand的小插件来代替它，勾选下拉checkbox即可以对列表项进行某种特定条件的排序.(这里加了`按价格`和`按评价`两个条件)
 ![](https://raw.githubusercontent.com/hanaarena/Little-eleme/master/img/3.png)
 
-(d).![](https://raw.githubusercontent.com/hanaarena/Little-eleme/master/img/4.png)
+(d).<br>![](https://raw.githubusercontent.com/hanaarena/Little-eleme/master/img/4.png)
 页面中间的这一栏我觉得可以去掉，可以`分解`它们放到导航栏或者footer中.
 
 **4.**刚开始接触编程的时候是用wordpress建博客，当时那个博客界面还挺丑的，然后在完善博客让它更好看点的过程中步入了前端的坑.越踩越深后觉得前端不仅仅是'网页设计'，而且javascript也不仅仅是一门传说中的'玩具语言'.我觉得前端可以不仅仅是前端，在很多方面都有可能性.
