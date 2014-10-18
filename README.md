@@ -4,7 +4,7 @@
 
 ## Demo
 
-[demo](hanaarena.github.io/Little-eleme/)
+[demo](http://hanaarena.github.io/Little-eleme/)
 
 ## 用到的项目
 
