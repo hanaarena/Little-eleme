@@ -15,9 +15,9 @@
 		header("Content-Type:text/html;charset=utf-8");
 		
 		$clientIp = $_SERVER["REMOTE_ADDR"]; 
-		//$info = getCity('218.72.163.137'); // For test
-		$info = getCity($clientIp);
+		$info = getCity('218.72.163.137'); // For test
+		//$info = getCity($clientIp);
 		//var_dump($info);
-		print($info[city]);
+		//print($info[city]);
 	}
 ?>
