@@ -1,0 +1,1168 @@
+<!DOCTYPE html>
+<html class="no-js" lang="zh">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="mobile-agent" content="format=xhtml; url=http://m.ele.me/">
+        <link rel="apple-touch-icon-precomposed" href="apple-touch-icon.png">
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" type="text/css" href="css/bootstrap-dropdown-checkbox.css">
+        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+        <script type="text/javascript" src="js/vendor/headroom.min.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 8]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <!-- header -->
+        <header id="topbar" class="navbar-fixed-top" role="banner">
+            <div class="navbar navbar-sm">
+                <div class="navbar-header" style="height:40px">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                    </button>
+                    <a id="logo" class="navbar-brand" href="/"><i class="logo"></i></a>
+                </div>
+                <div class="navbar-collapse collapse navbar-responsive-collapse">
+                    <!-- mobile app submenu -->
+                    <ul class="nav navbar-nav">
+                        <li id="mobileApp" class="dropdown app mobileApp">
+                            <a href="#" title="手机客户端" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="1000"><span class="mobile-app"></span><span class="mobile-app-text">手机浏览</span></a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="#iphone" title="iphone客户端">
+                                        <i class="mobile-app-iphone"></i>
+                                    </a>
+                                    <a href="#adnroid" title="android客户端">
+                                        <i class="mobile-app-android"></i>
+                                    </a>
+                                    <a href="#" title="马上扫描二维码">
+                                        <i class="mobile-app-qr"></i>
+                                    </a>
+                                </li>                               
+                            </ul>
+                        </li>
+                    </ul>
+                    <!-- mobile app submenu -->
+                    <form class="top-form navbar-form navbar-left">
+                        <i class="icon-search"></i><input type="text" class="form-control col-lg-8" placeholder="搜索餐厅，美食..">
+                    </form>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="dropdown sub-cart app mobileApp">
+                            <a href="#" title="购物车" class="dropdown-toggle icon-cart-ajax" data-toggle="dropdown" ><i class="icon-cart"></i></a>
+                            <ul class="dropdown-menu">
+                                <li id="ajax-cart"><a href="#">购物车为空</a></li>
+                            </ul>
+                        </li>
+                        <!-- <li><a href="#">登录 / 注册</a></li> -->
+                        <!-- if login -->
+                        <li class="dropdown sub-user">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">我的 ele.me</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#myPay" title="">订单记录</a></li>
+                                <li><a href="#myHistory" title="">浏览足迹</a></li>
+                                <li class="divider"></li>
+                                <li><a href="#logout">登出</a></li>
+                            </ul>    
+                        </li>
+                        <li class="dropdown sub-user sub-favor">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">收藏夹</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#favorElist" title="">饿单</a></li>
+                                <li><a href="#favorStore" title="">店铺</a></li>
+                            </ul>    
+                        </li>
+                        <!-- if login -->
+                        <li class="dropdown">
+                            <a href="#"><span class="sub-openStore">我要开店</span></a>    
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <!-- header -->
+        <!-- scroll search -->
+        <div class="search-box">
+            <form class="scroll-down-box navbar-form navbar-left">
+                <input style="margin:0 auto;" type="text" class="form-control col-lg-8" placeholder="搜索餐厅，美食..">
+            </form>
+        </div>
+        <!-- scroll search -->
+        <!-- container -->
+        <div class="container">
+            <!-- section Ads -->
+            <div id="section-ads" style="padding-top:63px;">
+                <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                    <!-- indicators -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                    </ol>
+                    <!-- indicators -->
+                    <!-- wrapper for ad slides -->
+                    <div class="carousel-inner" role="listbox">
+                        <div class="item active">
+                            <img src="http://placehold.it/1000x80.png/262626/fff&text=Ads" alt="">
+                        </div>
+                        <div class="item">
+                            <img src="http://placehold.it/1000x80.png/262626/fff&text=Ads" alt="">
+                        </div>
+                    </div>
+                    <!-- wrapper for ad slides -->
+                    <!-- controls -->
+                    <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                    <!-- controls -->
+                </div>
+            </div>
+            <!-- section Ads -->
+            <!-- section main -->
+            <div id="section-main">
+                <div class="main-menu filter-menu">
+                    <ul>
+                        <!-- place select -->
+                        <li>
+                            <div class="lineSearch">
+                                <ul>
+                                    <li class="thRelative" id="select-place">
+                                        <div class="boxSearch">
+                                            <span class="key_word">
+                                                <b></b>
+                                            </span>
+                                            <em class="ico thLeft ico_shBlue"></em>
+                                        </div>
+                                        <div class="search_form_suggest" style="display:none;">
+                                          <h3><a class="ico btn_close thRight" item="close">关闭</a>热门城市</h3>
+                                          <dl class="search_hotList">
+                                            <dd class="clr_after">
+                                              <a href="#">北京</a>
+                                              <a href="#">上海</a>
+                                              <a href="#">广州</a>
+                                              <a href="#">成都</a>
+                                              <a href="#">杭州</a>
+                                              <a href="#">南京</a>
+                                              <a href="#">深圳</a>
+                                              <a href="#">济南</a>
+                                              <a href="#">石家庄</a>
+                                              <a href="#">武汉</a>
+                                              <a href="#">郑州</a>
+                                              <a href="#">重庆</a>
+                                              <a href="#">福州</a>
+                                              <a href="#">西安</a>
+                                              <a href="#">长沙</a>
+                                              <a href="#">沈阳</a>
+                                              <a href="#">天津</a>
+                                              <a href="#">哈尔滨</a>
+                                              <a href="#">苏州</a>
+                                              <a href="#">南宁</a>
+                                            </dd>
+                                          </dl>
+                                          
+                                          <div class="clear"></div>
+                                          
+                                          <div class="thLeft thPadT5 tab_select">
+                                            <dl class="clrfix">
+                                              <dt>A-G</dt>
+                                              <dd class="clr_after">
+                                                <a href="#">北京</a>
+                                                <a href="#">长沙</a>
+                                                <a href="#">成都</a>
+                                                <a href="#">重庆</a>
+                                                <a href="#">福州</a>
+                                                <a href="#">广州</a>
+                                                <a href="#">贵阳</a>
+                                              </dd>
+                                            </dl>
+                                            <dl class="clrfix">
+                                              <dt>H-L</dt>
+                                              <dd class="clr_after">
+                                                <a href="#">哈尔滨</a>
+                                                <a href="#">杭州</a>
+                                                <a href="#">合肥</a>
+                                                <a href="#">济南</a>
+                                                <a href="#">昆明</a>
+                                              </dd>
+                                            </dl>
+                                            <dl class="clrfix">
+                                              <dt>M-T</dt>
+                                              <dd class="clr_after">
+                                                <a href="#">南昌</a>
+                                                <a href="#">南京</a>
+                                                <a href="#">南宁</a>
+                                                <a href="#">宁波</a>
+                                                <a href="#">青岛</a>
+                                                <a href="#">三亚</a>
+                                                <a href="#">上海</a>
+                                                <a href="#">沈阳</a>
+                                                <a href="#">深圳</a>
+                                                <a href="#">石家庄</a>
+                                                <a href="#">苏州</a>
+                                                <a href="#">太原</a>
+                                                <a href="#">天津</a>
+                                              </dd>
+                                            </dl>
+                                            <dl class="clrfix">
+                                              <dt>W-Z</dt>
+                                              <dd class="clr_after">
+                                                <a href="#">武汉</a>
+                                                <a href="#">厦门</a>
+                                                <a href="#">西安</a>
+                                                <a href="#">郑州</a>
+                                                <a href="#">中山</a>
+                                              </dd>
+                                            </dl>
+                                          </div>  
+                                        </div>
+                                  </li>
+                              </ul>                    
+                            </div>
+                        </li>
+                        <!-- place select -->
+                        <li><a href="#" title="切换地址">切换</a></li>
+                        <!-- filter -->
+                        <li class="divider">|</li>
+                        <li class="checkbox-btn"><input class="filter-check" type="checkbox" name="type" value="primary"><span style="background-color:#3099e3; color:#fff"><a href="#" title="更多品牌馆">品牌馆</a></span></li>
+                        <li class="checkbox-btn"><input class="filter-check"  type="checkbox" name="type" value="hot-primary">热门</li>
+                        <li class="divider">|</li>
+                        <li class="sort_sales_price dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                <div class="boxSearch main-menu-sort"><span class="key_word main-menu-keyword">按评价</span></div>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><input class="filter-check-two"  type="checkbox" name="sort" value="sales">从高到低</li>
+                            </ul>    
+                        </li>
+                        <li class="sort_sales_price dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                <div class="boxSearch main-menu-sort"><span class="key_word main-menu-keyword">按价格</span></div>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><input class="filter-check-two"  type="checkbox" name="sort" value="price">从高到低</li>
+                            </ul>    
+                        </li>
+                        <!-- filter -->
+                        <li class="divider">|</li>                  
+                        <li class="myDropdownCheckbox"></li>
+                    </ul>
+                </div>
+                <!-- section main content -->
+                <div class="main-content filter-content">
+                    <ul class="restaurant">
+                        <li data-id="id-1" data-type="primary" class="restaurant-block" data-html="true" data-toggle="popover" data-trigger="hover" data-content="<div><b>品牌一</b><br>  description</div>">
+                            <div class="main-content-favor" style="display: none;">
+                                <span class="icon-favor"></span>
+                                <a href="#" class="add-favor">收藏</a>
+                            </div>
+                            <div class="main-content-line">
+                                <div class="logo-box">
+                                    <div class="logo-img"><a href="#" target=""><img src="http://placehold.it/42x42/ff5243/fff.png"></a></div>
+                                    <div class="deliver-time-text">36分钟</div>
+                                </div>
+                                <div class="info">
+                                    <div class="name"><a href="#">品牌一</a></div>
+                                    <div class="rating">
+                                        <div class="rating-star rlevel-8"></div>
+                                        <span data-type="sales" class="rating-number">38订单</span>
+                                        <span class="price-text" data-type="price">100元</span>
+                                    </div>
+                                    <div class="services">
+                                        <span class="services-icon fapiao" data-toggle="tooltip" data-placement="top" title="I'm tooltip"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="main-conten-dialog"></div>
+                        </li>
+                        <li data-id="id-2" data-type="primary" class="restaurant-block" data-html="true" data-toggle="popover" data-trigger="hover" data-content="<div><b>品牌二</b><br>  description</div>">
+                            <div class="main-content-favor" style="display: none;">
+                                <span class="icon-favor"></span>
+                                <a href="#" class="add-favor">收藏</a>
+                            </div>
+                            <div class="main-content-line">
+                                <div class="logo-box">
+                                    <div class="logo-img"><a href="#" target=""><img src="http://placehold.it/42x42/ff5243/fff.png"></a></div>
+                                    <div class="deliver-time-text">45分钟</div>
+                                </div>
+                                <div class="info">
+                                    <div class="name"><a href="#">品牌二</a></div>
+                                    <div class="rating">
+                                        <div class="rating-star rlevel-8"></div>
+                                        <span data-type="sales" class="rating-number">45订单</span>
+                                        <span class="price-text" data-type="price">31元</span>
+                                    </div>
+                                    <div class="services">
+                                        <span class="services-icon fapiao" data-toggle="tooltip" data-placement="top" title="I'm tooltip"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="main-conten-dialog"></div>
+                        </li>
+                        <li data-id="id-3" data-type="primary" class="restaurant-block"  data-html="true" data-toggle="popover" data-trigger="hover" data-content="<div><b>品牌三</b><br>  description</div>">
+                            <div class="main-content-favor" style="display: none;">
+                                <span class="icon-favor"></span>
+                                <a href="#" class="add-favor">收藏</a>
+                            </div>
+                            <div class="main-content-line">
+                                <div class="logo-box">
+                                    <div class="logo-img"><a href="#" target=""><img src="http://placehold.it/42x42/ff5243/fff.png"></a></div>
+                                    <div class="deliver-time-text">45分钟</div>
+                                </div>
+                                <div class="info">
+                                    <div class="name"><a href="#">品牌三</a></div>
+                                    <div class="rating">
+                                        <div class="rating-star rlevel-8"></div>
+                                        <span data-type="sales" class="rating-number">20订单</span>
+                                        <span class="price-text" data-type="price">50元</span>
+                                    </div>
+                                    <div class="services">
+                                        <span class="services-icon fapiao" data-toggle="tooltip" data-placement="top" title="I'm tooltip"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="main-conten-dialog"></div>
+                        </li>
+                        <li data-id="id-4" data-type="hot-primary" class="restaurant-block"  data-html="true" data-toggle="popover" data-trigger="hover" data-content="<div><b>热门一</b><br>  description</div>">
+                            <div class="main-content-favor" style="display: none;">
+                                <span class="icon-favor"></span>
+                                <a href="#" class="add-favor">收藏</a>
+                            </div>
+                            <div class="main-content-line">
+                                <div class="logo-box">
+                                    <div class="logo-img"><a href="#" target=""><img src="http://placehold.it/42x42/ff695d/fff.png"></a></div>
+                                    <div class="deliver-time-text">45分钟</div>
+                                </div>
+                                <div class="info">
+                                    <div class="name"><a href="#">热门一</a></div>
+                                    <div class="rating">
+                                        <div class="rating-star rlevel-8"></div>
+                                        <span data-type="sales" class="rating-number">100订单</span>
+                                        <span class="price-text" data-type="price">41元</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="main-conten-dialog"></div>
+                        </li>
+                        <li data-id="id-5" data-type="hot-primary"  class="restaurant-block" data-html="true" data-toggle="popover" data-trigger="hover" data-content="<div><b>热门二</b><br>  description</div>">
+                            <div class="main-content-favor" style="display: none;">
+                                <span class="icon-favor"></span>
+                                <a href="#" class="add-favor">收藏</a>
+                            </div>
+                            <div class="main-content-line">
+                                <div class="logo-box">
+                                    <div class="logo-img"><a href="#" target=""><img src="http://placehold.it/42x42/ff695d/fff.png"></a></div>
+                                    <div class="deliver-time-text">45分钟</div>
+                                </div>
+                                <div class="info">
+                                    <div class="name"><a href="#">热门二</a></div>
+                                    <div class="rating">
+                                        <div class="rating-star rlevel-8"></div>
+                                        <span data-type="sales" class="rating-number">24订单</span>
+                                        <span class="price-text" data-type="price">32元</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="main-conten-dialog"></div>
+                        </li>
+                        <li data-id="id-6" data-type="hot-primary"  class="restaurant-block" data-html="true" data-toggle="popover" data-trigger="hover" data-content="<div><b>热门三</b><br>  description</div>">
+                            <div class="main-content-favor" style="display: none;">
+                                <span class="icon-favor"></span>
+                                <a href="#" class="add-favor">收藏</a>
+                            </div>
+                            <div class="main-content-line">
+                                <div class="logo-box">
+                                    <div class="logo-img"><a href="#" target=""><img src="http://placehold.it/42x42/ff695d/fff.png"></a></div>
+                                    <div class="deliver-time-text">45分钟</div>
+                                </div>
+                                <div class="info">
+                                    <div class="name"><a href="#">热门三</a></div>
+                                    <div class="rating">
+                                        <div class="rating-star rlevel-8"></div>
+                                        <span data-type="sales" class="rating-number">11订单</span>
+                                        <span class="price-text" data-type="price">11元</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="main-conten-dialog"></div>
+                        </li>
+                        <li data-id="id-7" data-type=""  class="restaurant-block" data-html="true" data-toggle="popover" data-trigger="hover" data-content="<div><b>普通X</b><br>  description</div>">
+                            <div class="main-content-favor" style="display: none;">
+                                <span class="icon-favor"></span>
+                                <a href="#" class="add-favor">收藏</a>
+                            </div>
+                            <div class="main-content-line">
+                                <div class="logo-box">
+                                    <div class="logo-img"><a href="#" target=""><img src="http://placehold.it/42x42/ff695d/fff.png"></a></div>
+                                    <div class="deliver-time-text">45分钟</div>
+                                </div>
+                                <div class="info">
+                                    <div class="name"><a href="#">普通X</a></div>
+                                    <div class="status closed"><span>休息中</span></div>
+                                </div>
+                            </div>
+                            <div class="main-conten-dialog"></div>
+                        </li>
+                        <li data-id="id-7" data-type=""  class="restaurant-block" data-html="true" data-toggle="popover" data-trigger="hover" data-content="<div><b>普通X</b><br>  description</div>">
+                            <div class="main-content-favor" style="display: none;">
+                                <span class="icon-favor"></span>
+                                <a href="#" class="add-favor">收藏</a>
+                            </div>
+                            <div class="main-content-line">
+                                <div class="logo-box">
+                                    <div class="logo-img"><a href="#" target=""><img src="http://placehold.it/42x42/ff695d/fff.png"></a></div>
+                                    <div class="deliver-time-text">45分钟</div>
+                                </div>
+                                <div class="info">
+                                    <div class="name"><a href="#">普通X</a></div>
+                                    <div class="status closed"><span>休息中</span></div>
+                                </div>
+                            </div>
+                            <div class="main-conten-dialog"></div>
+                        </li>
+                    </ul>
+                </div>
+                <!-- section main content -->
+            </div>
+            <!-- section main -->
+            <!-- section tuangou -->
+            <div id="section-tuan">
+                <div class="tuan-menu main-menu">
+                    <ul>
+                        <li><a href="#" title="附近团购">附近团购</a></li>
+                    </ul>
+                </div>
+                <!-- section tuangou content -->
+                <div class="tuan-content">
+                    <ul class="tuan-restaurant">
+                        <li class="tuan-block" data-html="true" data-toggle="popover" data-trigger="hover" data-content="<div><b>团购一</b><br>  description</div>">
+                            <div class="tuan-content-favor" style="display: none;">
+                                <span class="icon-favor"></span>
+                                <a href="#" class="add-favor">收藏</a>
+                            </div>
+                            <div class="tuan-content-line">
+                                <div class="logo-box">
+                                    <div class="logo-img"><a href="#" target=""><img src="http://placehold.it/42x42/3da1da/fff.png"></a></div>
+                                </div>
+                                <div class="info">
+                                    <div class="name"><a href="#">团购一</a></div>
+                                    <div class="rating">
+                                        <div class="rating-star rlevel-8"></div>
+                                        <span class="rating-number"></span>
+                                        <span style="display:none"></span>
+                                    </div>
+                                    <div class="services">
+                                        <span class="services-icon fapiao" data-toggle="tooltip" data-placement="top" title="I'm tooltip"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="tuan-block" data-html="true" data-toggle="popover" data-trigger="hover" data-content="<div><b>团购二</b><br>  description</div>">
+                            <div class="tuan-content-favor" style="display: none;">
+                                <span class="icon-favor"></span>
+                                <a href="#" class="add-favor">收藏</a>
+                            </div>
+                            <div class="tuan-content-line">
+                                <div class="logo-box">
+                                    <div class="logo-img"><a href="#" target=""><img src="http://placehold.it/42x42/3da1da/fff.png"></a></div>
+                                </div>
+                                <div class="info">
+                                    <div class="name"><a href="#">团购二</a></div>
+                                    <div class="rating">
+                                        <div class="rating-star rlevel-8"></div>
+                                        <span class="rating-number"></span>
+                                        <span style="display:none"></span>
+                                    </div>
+                                    <div class="services">
+                                        <span class="services-icon fapiao" data-toggle="tooltip" data-placement="top" title="I'm tooltip"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="tuan-block" data-html="true" data-toggle="popover" data-trigger="hover" data-content="<div><b>团购三</b><br>  description</div>">
+                            <div class="tuan-content-favor" style="display: none;">
+                                <span class="icon-favor"></span>
+                                <a href="#" class="add-favor">收藏</a>
+                            </div>
+                            <div class="tuan-content-line">
+                                <div class="logo-box">
+                                    <div class="logo-img"><a href="#" target=""><img src="http://placehold.it/42x42/3da1da/fff.png"></a></div>
+                                </div>
+                                <div class="info">
+                                    <div class="name"><a href="#">团购三</a></div>
+                                    <div class="rating">
+                                        <div class="rating-star rlevel-8"></div>
+                                        <span class="rating-number"></span>
+                                        <span style="display:none"></span>
+                                    </div>
+                                    <div class="services">
+                                        <span class="services-icon fapiao" data-toggle="tooltip" data-placement="top" title="I'm tooltip"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="tuan-block" data-html="true" data-toggle="popover" data-trigger="hover" data-content="<div><b>团购X</b><br>  description</div>">
+                            <div class="tuan-content-favor" style="display: none;">
+                                <span class="icon-favor"></span>
+                                <a href="#" class="add-favor">收藏</a>
+                            </div>
+                            <div class="tuan-content-line">
+                                <div class="logo-box">
+                                    <div class="logo-img"><a href="#" target=""><img src="http://placehold.it/42x42/3da1da/fff.png"></a></div>
+                                </div>
+                                <div class="info">
+                                    <div class="name"><a href="#">团购X</a></div>
+                                    <div class="rating">
+                                        <div class="rating-star rlevel-8"></div>
+                                        <span class="rating-number"></span>
+                                        <span style="display:none"></span>
+                                    </div>
+                                    <div class="services">
+                                        <span class="services-icon fapiao" data-toggle="tooltip" data-placement="top" title="I'm tooltip"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="tuan-block" data-html="true" data-toggle="popover" data-trigger="hover" data-content="<div><b>团购X</b><br>  description</div>">
+                            <div class="tuan-content-favor" style="display: none;">
+                                <span class="icon-favor"></span>
+                                <a href="#" class="add-favor">收藏</a>
+                            </div>
+                            <div class="tuan-content-line">
+                                <div class="logo-box">
+                                    <div class="logo-img"><a href="#" target=""><img src="http://placehold.it/42x42/3da1da/fff.png"></a></div>
+                                </div>
+                                <div class="info">
+                                    <div class="name"><a href="#">团购X</a></div>
+                                    <div class="rating">
+                                        <div class="rating-star rlevel-8"></div>
+                                        <span class="rating-number"></span>
+                                        <span style="display:none"></span>
+                                    </div>
+                                    <div class="services">
+                                        <span class="services-icon fapiao" data-toggle="tooltip" data-placement="top" title="I'm tooltip"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>           
+                        <li class="tuan-block" data-html="true" data-toggle="popover" data-trigger="hover" data-content="<div><b>团购X</b><br>  description</div>">
+                            <div class="tuan-content-favor" style="display: none;">
+                                <span class="icon-favor"></span>
+                                <a href="#" class="add-favor">收藏</a>
+                            </div>
+                            <div class="tuan-content-line">
+                                <div class="logo-box">
+                                    <div class="logo-img"><a href="#" target=""><img src="http://placehold.it/42x42/3da1da/fff.png"></a></div>
+                                </div>
+                                <div class="info">
+                                    <div class="name"><a href="#">团购X</a></div>
+                                    <div class="rating">
+                                        <div class="rating-star rlevel-8"></div>
+                                        <span class="rating-number"></span>
+                                        <span style="display:none"></span>
+                                    </div>
+                                    <div class="services">
+                                        <span class="services-icon fapiao" data-toggle="tooltip" data-placement="top" title="I'm tooltip"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="tuan-block" data-html="true" data-toggle="popover" data-trigger="hover" data-content="<div><b>团购X</b><br>  description</div>">
+                            <div class="tuan-content-favor" style="display: none;">
+                                <span class="icon-favor"></span>
+                                <a href="#" class="add-favor">收藏</a>
+                            </div>
+                            <div class="tuan-content-line">
+                                <div class="logo-box">
+                                    <div class="logo-img"><a href="#" target=""><img src="http://placehold.it/42x42/3da1da/fff.png"></a></div>
+                                </div>
+                                <div class="info">
+                                    <div class="name"><a href="#">团购X</a></div>
+                                    <div class="rating">
+                                        <div class="rating-star rlevel-8"></div>
+                                        <span class="rating-number"></span>
+                                        <span style="display:none"></span>
+                                    </div>
+                                    <div class="services">
+                                        <span class="services-icon fapiao" data-toggle="tooltip" data-placement="top" title="I'm tooltip"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="tuan-block" data-html="true" data-toggle="popover" data-trigger="hover" data-content="<div><b>团购X</b><br>  description</div>">
+                            <div class="tuan-content-favor" style="display: none;">
+                                <span class="icon-favor"></span>
+                                <a href="#" class="add-favor">收藏</a>
+                            </div>
+                            <div class="tuan-content-line">
+                                <div class="logo-box">
+                                    <div class="logo-img"><a href="#" target=""><img src="http://placehold.it/42x42/3da1da/fff.png"></a></div>
+                                </div>
+                                <div class="info">
+                                    <div class="name"><a href="#">团购X</a></div>
+                                    <div class="rating">
+                                        <div class="rating-star rlevel-8"></div>
+                                        <span class="rating-number"></span>
+                                        <span style="display:none"></span>
+                                    </div>
+                                    <div class="services">
+                                        <span class="services-icon fapiao" data-toggle="tooltip" data-placement="top" title="I'm tooltip"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="tuan-block" data-html="true" data-toggle="popover" data-trigger="hover" data-content="<div><b>团购X</b><br>  description</div>">
+                            <div class="tuan-content-favor" style="display: none;">
+                                <span class="icon-favor"></span>
+                                <a href="#" class="add-favor">收藏</a>
+                            </div>
+                            <div class="tuan-content-line">
+                                <div class="logo-box">
+                                    <div class="logo-img"><a href="#" target=""><img src="http://placehold.it/42x42/3da1da/fff.png"></a></div>
+                                </div>
+                                <div class="info">
+                                    <div class="name"><a href="#">团购X</a></div>
+                                    <div class="rating">
+                                        <div class="rating-star rlevel-8"></div>
+                                        <span class="rating-number"></span>
+                                        <span style="display:none"></span>
+                                    </div>
+                                    <div class="services">
+                                        <span class="services-icon fapiao" data-toggle="tooltip" data-placement="top" title="I'm tooltip"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="tuan-block" data-html="true" data-toggle="popover" data-trigger="hover" data-content="<div><b>团购X</b><br>  description</div>">
+                            <div class="tuan-content-favor" style="display: none;">
+                                <span class="icon-favor"></span>
+                                <a href="#" class="add-favor">收藏</a>
+                            </div>
+                            <div class="tuan-content-line">
+                                <div class="logo-box">
+                                    <div class="logo-img"><a href="#" target=""><img src="http://placehold.it/42x42/3da1da/fff.png"></a></div>
+                                </div>
+                                <div class="info">
+                                    <div class="name"><a href="#">团购X</a></div>
+                                    <div class="rating">
+                                        <div class="rating-star rlevel-8"></div>
+                                        <span class="rating-number"></span>
+                                        <span style="display:none"></span>
+                                    </div>
+                                    <div class="services">
+                                        <span class="services-icon fapiao" data-toggle="tooltip" data-placement="top" title="I'm tooltip"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <!-- section tuangou content -->
+            </div>
+            <!-- section tuangou -->
+            <!-- section more -->
+            <div id="section-more">
+                <div class="tuan-menu main-menu">
+                    <ul>
+                        <li><a href="#" title="更多美食">更多美食</a></li>
+                    </ul>
+                </div>
+                <!-- section more content -->
+                <div class="more-content tuan-content">
+                    <ul class="tuan-restaurant">
+                        <li class="tuan-block" data-html="true" data-toggle="popover" data-trigger="hover" data-content="<div><b>美食一</b><br>  description</div>">
+                            <div class="tuan-content-favor" style="display: none;">
+                                <span class="icon-favor"></span>
+                                <a href="#" class="add-favor">收藏</a>
+                            </div>
+                            <div class="tuan-content-line">
+                                <div class="logo-box">
+                                    <div class="logo-img"><a href="#" target=""><img src="http://placehold.it/42x42/668db3/fff.png"></a></div>
+                                </div>
+                                <div class="info">
+                                    <div class="name"><a href="#">美食一</a></div>
+                                    <div class="rating">
+                                        <div class="rating-star rlevel-8"></div>
+                                        <span class="rating-number"></span>
+                                        <span style="display:none"></span>
+                                    </div>
+                                    <div class="services">
+                                        <span class="services-icon fapiao" data-toggle="tooltip" data-placement="top" title="I'm tooltip"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="tuan-block" data-html="true" data-toggle="popover" data-trigger="hover" data-content="<div><b>美食二</b><br>  description</div>">
+                            <div class="tuan-content-favor" style="display: none;">
+                                <span class="icon-favor"></span>
+                                <a href="#" class="add-favor">收藏</a>
+                            </div>
+                            <div class="tuan-content-line">
+                                <div class="logo-box">
+                                    <div class="logo-img"><a href="#" target=""><img src="http://placehold.it/42x42/668db3/fff.png"></a></div>
+                                </div>
+                                <div class="info">
+                                    <div class="name"><a href="#">美食二</a></div>
+                                    <div class="rating">
+                                        <div class="rating-star rlevel-8"></div>
+                                        <span class="rating-number"></span>
+                                        <span style="display:none"></span>
+                                    </div>
+                                    <div class="services">
+                                        <span class="services-icon fapiao" data-toggle="tooltip" data-placement="top" title="I'm tooltip"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="tuan-block" data-html="true" data-toggle="popover" data-trigger="hover" data-content="<div><b>美食三</b><br>  description</div>">
+                            <div class="tuan-content-favor" style="display: none;">
+                                <span class="icon-favor"></span>
+                                <a href="#" class="add-favor">收藏</a>
+                            </div>
+                            <div class="tuan-content-line">
+                                <div class="logo-box">
+                                    <div class="logo-img"><a href="#" target=""><img src="http://placehold.it/42x42/668db3/fff.png"></a></div>
+                                </div>
+                                <div class="info">
+                                    <div class="name"><a href="#">美食三</a></div>
+                                    <div class="rating">
+                                        <div class="rating-star rlevel-8"></div>
+                                        <span class="rating-number"></span>
+                                        <span style="display:none"></span>
+                                    </div>
+                                    <div class="services">
+                                        <span class="services-icon fapiao" data-toggle="tooltip" data-placement="top" title="I'm tooltip"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="tuan-block" data-html="true" data-toggle="popover" data-trigger="hover" data-content="<div><b>美食X</b><br>  description</div>">
+                            <div class="tuan-content-favor" style="display: none;">
+                                <span class="icon-favor"></span>
+                                <a href="#" class="add-favor">收藏</a>
+                            </div>
+                            <div class="tuan-content-line">
+                                <div class="logo-box">
+                                    <div class="logo-img"><a href="#" target=""><img src="http://placehold.it/42x42/668db3/fff.png"></a></div>
+                                </div>
+                                <div class="info">
+                                    <div class="name"><a href="#">美食X</a></div>
+                                    <div class="rating">
+                                        <div class="rating-star rlevel-8"></div>
+                                        <span class="rating-number"></span>
+                                        <span style="display:none"></span>
+                                    </div>
+                                    <div class="services">
+                                        <span class="services-icon fapiao" data-toggle="tooltip" data-placement="top" title="I'm tooltip"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="tuan-block" data-html="true" data-toggle="popover" data-trigger="hover" data-content="<div><b>美食X</b><br>  description</div>">
+                            <div class="tuan-content-favor" style="display: none;">
+                                <span class="icon-favor"></span>
+                                <a href="#" class="add-favor">收藏</a>
+                            </div>
+                            <div class="tuan-content-line">
+                                <div class="logo-box">
+                                    <div class="logo-img"><a href="#" target=""><img src="http://placehold.it/42x42/668db3/fff.png"></a></div>
+                                </div>
+                                <div class="info">
+                                    <div class="name"><a href="#">美食X</a></div>
+                                    <div class="rating">
+                                        <div class="rating-star rlevel-8"></div>
+                                        <span class="rating-number"></span>
+                                        <span style="display:none"></span>
+                                    </div>
+                                    <div class="services">
+                                        <span class="services-icon fapiao" data-toggle="tooltip" data-placement="top" title="I'm tooltip"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>           
+                        <li class="tuan-block" data-html="true" data-toggle="popover" data-trigger="hover" data-content="<div><b>美食X</b><br>  description</div>">
+                            <div class="tuan-content-favor" style="display: none;">
+                                <span class="icon-favor"></span>
+                                <a href="#" class="add-favor">收藏</a>
+                            </div>
+                            <div class="tuan-content-line">
+                                <div class="logo-box">
+                                    <div class="logo-img"><a href="#" target=""><img src="http://placehold.it/42x42/668db3/fff.png"></a></div>
+                                </div>
+                                <div class="info">
+                                    <div class="name"><a href="#">美食X</a></div>
+                                    <div class="rating">
+                                        <div class="rating-star rlevel-8"></div>
+                                        <span class="rating-number"></span>
+                                        <span style="display:none"></span>
+                                    </div>
+                                    <div class="services">
+                                        <span class="services-icon fapiao" data-toggle="tooltip" data-placement="top" title="I'm tooltip"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="tuan-block" data-html="true" data-toggle="popover" data-trigger="hover" data-content="<div><b>美食X</b><br>  description</div>">
+                            <div class="tuan-content-favor" style="display: none;">
+                                <span class="icon-favor"></span>
+                                <a href="#" class="add-favor">收藏</a>
+                            </div>
+                            <div class="tuan-content-line">
+                                <div class="logo-box">
+                                    <div class="logo-img"><a href="#" target=""><img src="http://placehold.it/42x42/668db3/fff.png"></a></div>
+                                </div>
+                                <div class="info">
+                                    <div class="name"><a href="#">美食X</a></div>
+                                    <div class="rating">
+                                        <div class="rating-star rlevel-8"></div>
+                                        <span class="rating-number"></span>
+                                        <span style="display:none"></span>
+                                    </div>
+                                    <div class="services">
+                                        <span class="services-icon fapiao" data-toggle="tooltip" data-placement="top" title="I'm tooltip"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="tuan-block" data-html="true" data-toggle="popover" data-trigger="hover" data-content="<div><b>美食X</b><br>  description</div>">
+                            <div class="tuan-content-favor" style="display: none;">
+                                <span class="icon-favor"></span>
+                                <a href="#" class="add-favor">收藏</a>
+                            </div>
+                            <div class="tuan-content-line">
+                                <div class="logo-box">
+                                    <div class="logo-img"><a href="#" target=""><img src="http://placehold.it/42x42/668db3/fff.png"></a></div>
+                                </div>
+                                <div class="info">
+                                    <div class="name"><a href="#">美食X</a></div>
+                                    <div class="rating">
+                                        <div class="rating-star rlevel-8"></div>
+                                        <span class="rating-number"></span>
+                                        <span style="display:none"></span>
+                                    </div>
+                                    <div class="services">
+                                        <span class="services-icon fapiao" data-toggle="tooltip" data-placement="top" title="I'm tooltip"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="tuan-block" data-html="true" data-toggle="popover" data-trigger="hover" data-content="<div><b>美食X</b><br>  description</div>">
+                            <div class="tuan-content-favor" style="display: none;">
+                                <span class="icon-favor"></span>
+                                <a href="#" class="add-favor">收藏</a>
+                            </div>
+                            <div class="tuan-content-line">
+                                <div class="logo-box">
+                                    <div class="logo-img"><a href="#" target=""><img src="http://placehold.it/42x42/668db3/fff.png"></a></div>
+                                </div>
+                                <div class="info">
+                                    <div class="name"><a href="#">美食X</a></div>
+                                    <div class="rating">
+                                        <div class="rating-star rlevel-8"></div>
+                                        <span class="rating-number"></span>
+                                        <span style="display:none"></span>
+                                    </div>
+                                    <div class="services">
+                                        <span class="services-icon fapiao" data-toggle="tooltip" data-placement="top" title="I'm tooltip"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="tuan-block" data-html="true" data-toggle="popover" data-trigger="hover" data-content="<div><b>美食X</b><br>  description</div>">
+                            <div class="tuan-content-favor" style="display: none;">
+                                <span class="icon-favor"></span>
+                                <a href="#" class="add-favor">收藏</a>
+                            </div>
+                            <div class="tuan-content-line">
+                                <div class="logo-box">
+                                    <div class="logo-img"><a href="#" target=""><img src="http://placehold.it/42x42/668db3/fff.png"></a></div>
+                                </div>
+                                <div class="info">
+                                    <div class="name"><a href="#">美食X</a></div>
+                                    <div class="rating">
+                                        <div class="rating-star rlevel-8"></div>
+                                        <span class="rating-number"></span>
+                                        <span style="display:none"></span>
+                                    </div>
+                                    <div class="services">
+                                        <span class="services-icon fapiao" data-toggle="tooltip" data-placement="top" title="I'm tooltip"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="tuan-block" data-html="true" data-toggle="popover" data-trigger="hover" data-content="<div><b>美食X</b><br>  description</div>">
+                            <div class="tuan-content-favor" style="display: none;">
+                                <span class="icon-favor"></span>
+                                <a href="#" class="add-favor">收藏</a>
+                            </div>
+                            <div class="tuan-content-line">
+                                <div class="logo-box">
+                                    <div class="logo-img"><a href="#" target=""><img src="http://placehold.it/42x42/668db3/fff.png"></a></div>
+                                </div>
+                                <div class="info">
+                                    <div class="name"><a href="#">美食X</a></div>
+                                    <div class="rating">
+                                        <div class="rating-star rlevel-8"></div>
+                                        <span class="rating-number"></span>
+                                        <span style="display:none"></span>
+                                    </div>
+                                    <div class="services">
+                                        <span class="services-icon fapiao" data-toggle="tooltip" data-placement="top" title="I'm tooltip"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="tuan-block" data-html="true" data-toggle="popover" data-trigger="hover" data-content="<div><b>美食X</b><br>  description</div>">
+                            <div class="tuan-content-favor" style="display: none;">
+                                <span class="icon-favor"></span>
+                                <a href="#" class="add-favor">收藏</a>
+                            </div>
+                            <div class="tuan-content-line">
+                                <div class="logo-box">
+                                    <div class="logo-img"><a href="#" target=""><img src="http://placehold.it/42x42/668db3/fff.png"></a></div>
+                                </div>
+                                <div class="info">
+                                    <div class="name"><a href="#">美食X</a></div>
+                                    <div class="rating">
+                                        <div class="rating-star rlevel-8"></div>
+                                        <span class="rating-number"></span>
+                                        <span style="display:none"></span>
+                                    </div>
+                                    <div class="services">
+                                        <span class="services-icon fapiao" data-toggle="tooltip" data-placement="top" title="I'm tooltip"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="tuan-block" data-html="true" data-toggle="popover" data-trigger="hover" data-content="<div><b>美食X</b><br>  description</div>">
+                            <div class="tuan-content-favor" style="display: none;">
+                                <span class="icon-favor"></span>
+                                <a href="#" class="add-favor">收藏</a>
+                            </div>
+                            <div class="tuan-content-line">
+                                <div class="logo-box">
+                                    <div class="logo-img"><a href="#" target=""><img src="http://placehold.it/42x42/668db3/fff.png"></a></div>
+                                </div>
+                                <div class="info">
+                                    <div class="name"><a href="#">美食X</a></div>
+                                    <div class="rating">
+                                        <div class="rating-star rlevel-8"></div>
+                                        <span class="rating-number"></span>
+                                        <span style="display:none"></span>
+                                    </div>
+                                    <div class="services">
+                                        <span class="services-icon fapiao" data-toggle="tooltip" data-placement="top" title="I'm tooltip"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="tuan-block" data-html="true" data-toggle="popover" data-trigger="hover" data-content="<div><b>美食X</b><br>  description</div>">
+                            <div class="tuan-content-favor" style="display: none;">
+                                <span class="icon-favor"></span>
+                                <a href="#" class="add-favor">收藏</a>
+                            </div>
+                            <div class="tuan-content-line">
+                                <div class="logo-box">
+                                    <div class="logo-img"><a href="#" target=""><img src="http://placehold.it/42x42/668db3/fff.png"></a></div>
+                                </div>
+                                <div class="info">
+                                    <div class="name"><a href="#">美食X</a></div>
+                                    <div class="rating">
+                                        <div class="rating-star rlevel-8"></div>
+                                        <span class="rating-number"></span>
+                                        <span style="display:none"></span>
+                                    </div>
+                                    <div class="services">
+                                        <span class="services-icon fapiao" data-toggle="tooltip" data-placement="top" title="I'm tooltip"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="tuan-block" data-html="true" data-toggle="popover" data-trigger="hover" data-content="<div><b>美食X</b><br>  description</div>">
+                            <div class="tuan-content-favor" style="display: none;">
+                                <span class="icon-favor"></span>
+                                <a href="#" class="add-favor">收藏</a>
+                            </div>
+                            <div class="tuan-content-line">
+                                <div class="logo-box">
+                                    <div class="logo-img"><a href="#" target=""><img src="http://placehold.it/42x42/668db3/fff.png"></a></div>
+                                </div>
+                                <div class="info">
+                                    <div class="name"><a href="#">美食X</a></div>
+                                    <div class="rating">
+                                        <div class="rating-star rlevel-8"></div>
+                                        <span class="rating-number"></span>
+                                        <span style="display:none"></span>
+                                    </div>
+                                    <div class="services">
+                                        <span class="services-icon fapiao" data-toggle="tooltip" data-placement="top" title="I'm tooltip"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="tuan-block" data-html="true" data-toggle="popover" data-trigger="hover" data-content="<div><b>美食X</b><br>  description</div>">
+                            <div class="tuan-content-favor" style="display: none;">
+                                <span class="icon-favor"></span>
+                                <a href="#" class="add-favor">收藏</a>
+                            </div>
+                            <div class="tuan-content-line">
+                                <div class="logo-box">
+                                    <div class="logo-img"><a href="#" target=""><img src="http://placehold.it/42x42/668db3/fff.png"></a></div>
+                                </div>
+                                <div class="info">
+                                    <div class="name"><a href="#">美食X</a></div>
+                                    <div class="rating">
+                                        <div class="rating-star rlevel-8"></div>
+                                        <span class="rating-number"></span>
+                                        <span style="display:none"></span>
+                                    </div>
+                                    <div class="services">
+                                        <span class="services-icon fapiao" data-toggle="tooltip" data-placement="top" title="I'm tooltip"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="tuan-block" data-html="true" data-toggle="popover" data-trigger="hover" data-content="<div><b>美食X</b><br>  description</div>">
+                            <div class="tuan-content-favor" style="display: none;">
+                                <span class="icon-favor"></span>
+                                <a href="#" class="add-favor">收藏</a>
+                            </div>
+                            <div class="tuan-content-line">
+                                <div class="logo-box">
+                                    <div class="logo-img"><a href="#" target=""><img src="http://placehold.it/42x42/668db3/fff.png"></a></div>
+                                </div>
+                                <div class="info">
+                                    <div class="name"><a href="#">美食X</a></div>
+                                    <div class="rating">
+                                        <div class="rating-star rlevel-8"></div>
+                                        <span class="rating-number"></span>
+                                        <span style="display:none"></span>
+                                    </div>
+                                    <div class="services">
+                                        <span class="services-icon fapiao" data-toggle="tooltip" data-placement="top" title="I'm tooltip"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="tuan-block" data-html="true" data-toggle="popover" data-trigger="hover" data-content="<div><b>美食X</b><br>  description</div>">
+                            <div class="tuan-content-favor" style="display: none;">
+                                <span class="icon-favor"></span>
+                                <a href="#" class="add-favor">收藏</a>
+                            </div>
+                            <div class="tuan-content-line">
+                                <div class="logo-box">
+                                    <div class="logo-img"><a href="#" target=""><img src="http://placehold.it/42x42/668db3/fff.png"></a></div>
+                                </div>
+                                <div class="info">
+                                    <div class="name"><a href="#">美食X</a></div>
+                                    <div class="rating">
+                                        <div class="rating-star rlevel-8"></div>
+                                        <span class="rating-number"></span>
+                                        <span style="display:none"></span>
+                                    </div>
+                                    <div class="services">
+                                        <span class="services-icon fapiao" data-toggle="tooltip" data-placement="top" title="I'm tooltip"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="tuan-block" data-html="true" data-toggle="popover" data-trigger="hover" data-content="<div><b>美食X</b><br>  description</div>">
+                            <div class="tuan-content-favor" style="display: none;">
+                                <span class="icon-favor"></span>
+                                <a href="#" class="add-favor">收藏</a>
+                            </div>
+                            <div class="tuan-content-line">
+                                <div class="logo-box">
+                                    <div class="logo-img"><a href="#" target=""><img src="http://placehold.it/42x42/668db3/fff.png"></a></div>
+                                </div>
+                                <div class="info">
+                                    <div class="name"><a href="#">美食X</a></div>
+                                    <div class="rating">
+                                        <div class="rating-star rlevel-8"></div>
+                                        <span class="rating-number"></span>
+                                        <span style="display:none"></span>
+                                    </div>
+                                    <div class="services">
+                                        <span class="services-icon fapiao" data-toggle="tooltip" data-placement="top" title="I'm tooltip"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <!-- section more content -->
+            </div>
+            <!-- section more -->
+            <!-- section footer -->
+            <div id="footer">
+                <div class="footer">
+                    <ul>
+                        <li>关于
+                            <ul><a href="#">Weibo</a></ul>
+                            <ul><a href="#">Blog</a></ul>
+                            <ul><a href="#">关于我们</a></ul>
+                        </li>
+                        <li>联系
+                            <ul><a href="#">加入我们</a></ul>
+                            <ul><a href="#">联系我们</a></ul>
+                        </li>
+                        <li>帮助
+                            <ul><a href="#">订单流程</a></ul>
+                            <ul><a href="#">服务条款</a></ul>
+                            <ul><a href="#">站点地图</a></ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- section footer -->
+        </div>
+        <!-- container -->
+
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.1.min.js"><\/script>')</script>
+        <script type="text/javascript" src="js/vendor/jquery.easing.1.3.js"></script>
+        <script type="text/javascript" src="js/vendor/jquery.quicksand.js"></script>
+        <script type="text/javascript" src="js/vendor/bootstrap.min.js"></script>
+        <script type"text/javascript" src="js/vendor/bootstrap-dropdown-checkbox.min.js"></script>
+
+        <script type="text/javascript">
+            var client_place = null;
+            $.get("getGeo.php",function(data){
+                client_place = data;
+                $('span.key_word b').text(client_place);
+            });
+            /* place select init */
+            $(function(){
+                $('#select-place').selectPlace({});
+            });
+            /* header menu hover */
+            $('.navbar-responsive-collapse .dropdown').hover(function(){ 
+              $('.dropdown-toggle', this).trigger('click'); 
+            });
+            
+            /* myDropdownCheckbox init */
+            var myData = [
+                {id: 1, label: "全部", isChecked: true },
+                {id: 2, label: "营业中"},
+                {id: 3, label: "活动"}
+            ];
+            $(".myDropdownCheckbox").dropdownCheckbox({
+                data: myData,         
+                title: "My Dropdown Checkbox",
+                showNbSelected: true,
+                templateButton: '<a href="#" class="dropdown-checkbox-toggle" data-toggle="dropdown"><div class="boxSearch main-menu-other"><span class="key_word main-menu-keyword">其他</span></div></a>'
+            });
+            
+        </script>    
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>

@@ -1,0 +1,87 @@
+<form id="filter">
+  <fieldset>
+    <legend>Filter by type</legend>
+    <label><input type="radio" name="type" value="all" checked="checked">Everything</label>
+    <label><input type="radio" name="type" value="primary">Applications</label>
+    <label><input type="radio" name="type" value="hot">Utilities</label>
+  </fieldset>
+  <fieldset>
+    <legend>Sort by</legend>
+    <label><input type="radio" name="sort" value="sales" checked="checked">Size</label>
+    <label><input type="radio" name="sort" value="price">Name</label>      
+  </fieldset>
+</form>
+
+<ul id="restaurant" class="restaurant-grid">
+	<li data-id="1" data-type="primary">
+		<img src="#" width="" height="" alt="" />
+		<strong>Description</strong>
+		<span data-type="sales">Sales</span>
+	</li>
+	<li data-id="2" data-type="hot">
+		<img src="#" width="" height="" alt="" />
+		<strong>Description</strong>
+		<span data-type="sales">Sales</span>
+	</li>
+</ul>
+
+<script type="text/javascript">
+	(function($) {
+		$.fn.sorted = function(customOptions) {
+			var options = {
+			  reversed: false,
+			  by: function(a) {return a.text();}
+			};
+			$.extend(options, customOptions);
+			$data = $(this);
+			arr = $data.get();
+			arr.sort(function(a, b){
+				var valA = options.by($(a));
+				var valB = options.by($(b));
+				if(options.reversed){
+					return (valA<valB) ? 1:(valA>valB)? -1:0;
+				} else {
+					return (valA<valB) ? 1:(valA>valB)? 1:0;
+				}
+			});
+			return $(arr);
+			};
+	})(jQuery);
+
+	$(function() {
+		var $filterType = $('#filter input[name="type"]');
+		var $filterSort = $('#filter input[name="sort"]');
+
+		var $restaurant = $('#restaurant');
+
+		var $data = $restaurant.clone();
+
+		$filterType.add($filterSort).change(function(e){
+			if($($filterType+':checked').val() == 'all') {
+				var $filteredData = $data.find('li');
+			} else {
+				var $filteredData = $data.find('li[data-type=' + $($filterType+":checked").val() + ']');
+			}
+
+			if($('#filter input[name="sort"]:checked').val() == "sales") {
+				var $sortedData = $filteredData.sorted({
+					by:function(v) {
+						return parseFloat($(v).find('span[data-type]=sales').text);
+					}
+				});
+			} else {
+				var $sortedData = $filteredData.sorted({
+					by: function(v) {
+						//return $(v).find('strong').text().toLowerCase();
+					}
+				});
+			}
+
+			$restaurant.quicksand($sortedData, {
+				duration: 800,
+				easing: 'easeInOutQuad'
+			});
+		});
+	});
+
+</script>
