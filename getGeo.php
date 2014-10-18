@@ -1,6 +1,6 @@
 <?php
 	if($_SERVER['HTTP_X_REQUESTED_WITH'] != "XMLHttpRequest") {
-		header("Location: http://localhost/2014-9-27/");
+		header("Location: http://hanaarena.github.io/Little-eleme");
 		die();
 	} else {
 		function getCity($ip) {
