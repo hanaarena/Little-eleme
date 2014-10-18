@@ -18,6 +18,6 @@
 		$info = getCity('218.72.163.137'); // For test
 		//$info = getCity($clientIp);
 		//var_dump($info);
-		//print($info[city]);
+		print($info[city]);
 	}
 ?>
