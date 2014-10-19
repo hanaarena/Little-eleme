@@ -139,7 +139,7 @@
                                     <li class="thRelative" id="select-place">
                                         <div class="boxSearch">
                                             <span class="key_word">
-                                                <b></b>
+                                                <b>广州</b>
                                             </span>
                                             <em class="ico thLeft ico_shBlue"></em>
                                         </div>
@@ -1135,10 +1135,11 @@
 
         <script type="text/javascript">
             var client_place = null;
-            $.get("getGeo.php",function(data){
+            /*$.get("getGeo.php",function(data){
                 client_place = data;
                 $('span.key_word b').text(client_place);
             });
+            */
             /* place select init */
             $(function(){
                 $('#select-place').selectPlace({});
